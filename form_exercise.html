@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<div>
+		<label>
+			First Name:
+			<input name="first-name" type="text" placeholder="John" required>
+		</label>
+		<label>
+			Last Name:
+			<input name="last-name" type="text" placeholder="Smith" required>
+		</label>
+	</div>
+
+	<div>
+		<label>
+			Male
+			<input name="male" type="radio" name="gender">
+		</label>
+		<label>
+			Female
+			<input name="female" type="radio" name="gender">
+		</label>
+		<label>
+			Other
+			<input name="other" type="radio" name="gender">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			Email:
+			<input name="email" type="email" placeholder="your email" required>
+		</label>
+		<label>
+			Password:
+			<input name="password" type="password" pattern=".{5,10}" title="required">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			Birthday:
+			<select name="month">
+				<option selected disabled hidden>Month</option>
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+			</select>
+			<select name="day">
+				<option selected disabled hidden>Day</option>
+				<option>1</option>
+				<option>5</option>
+				<option>10</option>
+				<option>15</option>
+				<option>20</option>
+				<option>25</option>
+				<option>30</option>
+			</select>
+			<select name="year">
+				<option selected disabled hidden>Year</option>
+				<option>1700</option>
+				<option>1800</option>
+				<option>1900</option>
+				<option>2000</option>
+				<option>2100</option>
+			</select>
+		</label>
+	</div>
+
+	<div>
+		<label>
+			I agree to the terms and conditions
+			<input type="checkbox" required>
+		</label>
+	</div>
+	
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>
